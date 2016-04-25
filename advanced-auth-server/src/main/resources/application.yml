@@ -1,0 +1,17 @@
+server:
+  context-path: /uaa
+  port: 9090
+security:
+  user:
+    name: test@example.com
+    password: secret
+  oauth2:
+    client:
+      client-id: myclient
+      client-secret: clientsecret
+      authorized-grant-types: implicit, password, refresh_token, authorization_code
+      scope: openid
+      auto-approve-scopes: openid
+spring:
+  thymeleaf:
+    cache: false
