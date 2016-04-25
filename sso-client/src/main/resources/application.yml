@@ -1,0 +1,21 @@
+server:
+  context-path: /client
+  port: 9094
+  session:
+    persistent: false
+security:
+  oauth2:
+    client:
+      client-id: myclient
+      client-secret: clientsecret
+      access-token-uri: http://localhost:9090/uaa/oauth/token
+      user-authorization-uri: http://localhost:9090/uaa/oauth/authorize
+      grant-type: authorization_code
+      scope: openid
+    resource:
+      user-info-uri: http://localhost:9090/uaa/user
+      prefer-token-info: false
+  user:
+    password: none
+logging:
+  level.org.springframework.security.oauth2: debug
