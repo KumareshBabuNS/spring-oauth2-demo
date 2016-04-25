@@ -1,6 +1,6 @@
 # spring-oauth2-demo
 
-Demonstration project for OAUth2 using spring security oauth2 containing...
+Demonstration project for OAuth2 using spring security oauth2 containing...
 
 * Authorization server (using basic authentication)
 * Resource server (with simple rest service)
